@@ -9,6 +9,7 @@
     "angular": "^1.7.5",
     "angular-loader": "^1.7.5",
     "angular-route": "^1.7.5",
+    "express": "^4.17.1",
     "html5-boilerplate": "0.0.1"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
+    "nodemon": "^1.19.1",
     "protractor": "^5.4.1"
   },
   "scripts": {
