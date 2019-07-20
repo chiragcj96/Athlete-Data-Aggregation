@@ -1,0 +1,41 @@
+/* app css stylesheet */
+
+
+/* 1 - BASE FORM STYLES */
+
+
+/* 3 - CHECKBOX STYLES  */
+
+
+/* 4 - TEXT INPUT STYLES & FIELDSETS */
+
+
+/* 5 - SELECT BOXES */
+
+
+/* 6 - INPUT VALIDATION STYLES */
+
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
