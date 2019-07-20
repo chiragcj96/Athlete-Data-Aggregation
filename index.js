@@ -8,6 +8,8 @@ const app = express();
 mongoose.connect('mongodb://localhost/athletego');
 mongoose.Promise = global.Promise;
 
+app.use(express.static('app'));
+
 app.use(bodyParser.json());
 
 //initialize routes

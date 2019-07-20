@@ -4,7 +4,9 @@ const Athlete = require('../models/athlete');
 
 //get the lists of atletes form db
 router.get('/athletes', function(req,res, next){
-    res.send({type: 'GET'});
+    Athlete.find({}).then(function(athletes){
+        res.send(athletes);
+    });
 });
 //post an athlete to db
 router.post('/athletes', function(req,res, next){
