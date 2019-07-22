@@ -7,8 +7,16 @@ body{
 
 header{
   background: #053c49;
-  padding: 10px;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-right: 0%;
+  padding: 20px;
   text-align: center;
+}
+
+h3{
+  margin-bottom: 0px;
 }
 
 img {
@@ -24,6 +32,7 @@ form{
 form p{
   font-size: 20px;
   letter-spacing: 0.0em;
+  /* margin-bottom: 0px; */
 }
 /* 1 - BASE FORM STYLES */
 input[type="radio"]{
@@ -32,38 +41,18 @@ input[type="radio"]{
   margin: 0;
 }
 label[for="male"], label[for="female"], label[for="other"]{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: inline-block;
   padding-left: 25px;
   background: url(img/checks.png) no-repeat;
   background-position: 0 -32px;
-  line-height: 24px;
+  line-height: 20px;
   cursor: pointer;
 }
-input:checked + label[for="male"], input:checked + label[for="female"]{
+input:checked + label[for="male"], input:checked + label[for="female"], input:checked + label[for="other"]{
   background-position: 0 0;
   color: aqua;
 } 
-
-/* 3 - CHECKBOX STYLES  */
-input[type="checkbox"]{
-  opacity: 0;
-  width: 0;
-  margin: 0;
-}
-label[for="golf"], label[for="tennis"], label[for="cricket"], label[for="basketball"], label[for="baseball"], label[for="aquatics"], label[for="archery"], label[for="badminton"], label[for="boxing"]{
-  margin-bottom: 10px;
-  display: inline-block;
-  padding-left: 25px;
-  background: url(img/checks.png) no-repeat;
-  background-position: 0 -98px;
-  line-height: 24px;
-  cursor: pointer;
-}
-input:checked + label[for="golf"], input:checked + label[for="tennis"], input:checked + label[for="cricket"], input:checked + label[for="basketball"], input:checked + label[for="baseball"], input:checked + label[for="aquatics"], input:checked + label[for="archery"], input:checked + label[for="badminton"], input:checked + label[for="boxing"]{
-  background-position: 0 -65px;
-  color: aqua;
-}
 
 /* 4 - TEXT INPUT STYLES & FIELDSETS */
 fieldset{
@@ -73,16 +62,19 @@ fieldset{
 }
 legend{
   padding: 10px;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 0.1em;
 }
 input[type="email"], input[type="telephone"]{
   display: block;
   width: 300px;
-  margin: 0px 0;
+  margin: 10px 0;
   padding: 10px;
   border-radius: 4px;
+  font-size: 16px;
   border: 1px solid #ddd;
+  float: left;
+  clear: both;
   /* display: block;
   margin-bottom: 20px;
   padding: 10px 10px 10px 50px;
@@ -115,11 +107,11 @@ select{
   margin: 30px 0;
   padding: 10px 50px 10px 10px;
   background: url(img/select.png) no-repeat 95% center;
-  background-color: #222;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-radius: 4px;
   border: 2px solid #fff;
-  width: 370px;
+  width: 320px;
 }
 input[type="submit"]{
   background: #b61111;
@@ -130,7 +122,7 @@ input[type="submit"]{
   border-radius: 4px;
   border: 0; 
   box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
-  width: 280px;
+  width: 380px;
 }
 
 
@@ -184,9 +176,9 @@ input[type="email"]:valid + .tick, input[type="telephone"]:valid + .tick{
 
 
 body{
-  font-family: Raleway;
+  font-family: 'Times New Roman', Times, serif;
   color: #555;
-  background: #7ec7db;
+  background: #a0a3a3;
   margin: 10px 30px;
 }
 #homepage{
@@ -221,7 +213,8 @@ form{
   margin: 30px auto;
 }
 input[type="submit"]{
-  background: #555;
+  background: #053c49;
+  background-blend-mode: darken; 
    color: #fff;
    border: 0;
    padding: 10px;
